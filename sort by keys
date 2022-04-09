@@ -1,0 +1,21 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        HashMap<Integer, Integer> hm=new HashMap<Integer, Integer>();
+        hm.put(23, 3);  
+        hm.put(17, 5);  
+        hm.put(15, 1);  
+        hm.put(9, 9);  
+        Iterator <Integer> it = hm.keySet().iterator(); 
+    TreeMap<Integer,Integer> tm=new  TreeMap<Integer,Integer> (hm);  
+        Iterator itr=tm.keySet().iterator();               
+        while(itr.hasNext())    
+        {    
+        int key=(int)itr.next();  
+        System.out.println("Roll no:  "+key+"     name:   "+hm.get(key));  
+        }    
+
+        
+        
+    }
+}
